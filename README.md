@@ -1,6 +1,4 @@
-# My Web Development Portfolio
-
-## Welcome to my personal portfolio! 
+# Welcome to my personal portfolio! 
 
 This repository showcases a collection of projects that highlight my skills and experience in web development. Each project reflects my dedication to learning and growing as a developer, demonstrating both foundational knowledge and innovative solutions.
 
