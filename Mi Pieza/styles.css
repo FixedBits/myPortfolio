@@ -91,19 +91,20 @@ a:visited {
   color: rgb(161, 161, 161); /* Light gray text color */
   margin: 1rem; /* Margin around the product card */
   padding: 2rem;
-  box-shadow: inset 0 0 15px 8px rgba(181, 181, 181, 0.119); /* Inner shadow for card */
-  transition: 0.7s;
+  box-shadow: inset 0 0 20px 8px rgba(179, 179, 179, 0.377); /* Inner shadow for card */
+
+  transition: 0.5s;
   border-radius: 1%;
 }
 
 .product-card:hover {
-  box-shadow: inset 0 0 30px 8px rgba(126, 126, 126, 0.377); /* Inner shadow for card */
-  transition: 1s;
+  box-shadow: inset 0 0 12px 8px rgba(181, 181, 181, 0.119); /* Inner shadow for card */
+  transition: 0.1s;
 }
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
+  grid-template-columns: repeat(3, 1fr); /* Create two equal columns */
   gap: 2rem; /* Space between grid items */
   margin: 3rem; /* Margin around the grid */
 }
