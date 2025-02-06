@@ -2,144 +2,244 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Consistent font family across the website */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* Consistent font family across the website */
 }
 
 body {
-  background-color: rgb(255, 255, 255); /* Light background color for readability */
-  min-height: 100vh; /* Ensure the body covers the entire viewport height */
+  background-color: #f9f9f9;
+  /* Light background color for readability */
+  min-height: 100vh;
+  /* Ensure the body covers the entire viewport height */
   transition: background-color 2s, color 2s;
 }
 
 .dark-mode {
   background-color: #1f1f1f;
-  color: #e0e0e0;
+  color: inherit;
 }
 
-#card-video,
-.product-card img {
-  width: 72vw; /* Set responsive width for the video and images */
-  height: auto; /* Maintain aspect ratio */
-  max-width: 100%; /* Prevent overflow */
-  max-height: 70vh; /* Limit the maximum height */
-  opacity: 0.8; /* Initial opacity for a semi-transparent effect */
-  transition: opacity 0.5s; /* Smooth opacity transition */
+button.toggle-btn {
+  font-size: 1rem;
+  /* Adjust font size */
+  padding: 0.6rem;
+  /* Padding for better clickability */
+  background: none;
+  /* Transparent background */
+  border: none;
+  /* Remove default border */
+  color: rgb(197, 0, 0);
+  /* Dark gray text color */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  border: solid black 0.05rem;
+  /* Subtle black border */
+  border-radius: 5px;
 }
 
-#card-video:hover,
-.product-card img:hover {
-  opacity: 1; /* Fully opaque on hover */
-}
-
-.video-caption {
-  padding: 1rem; /* Padding inside the caption */
-  max-width: 61%; /* Set width of the caption */
-}
-
-nav {
-  padding: 3rem; /* Ample padding for navigation */
-  display: flex; /* Flexbox layout for navigation items */
-  gap: 4rem; /* Space between navigation items */
-  justify-content: center; /* Center-align navigation items */
-  border-bottom: solid 0.01rem rgb(179, 179, 179); /* Subtle bottom border */
-  text-wrap: nowrap; /* Prevent text wrapping */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
-.nav-links {
-  white-space: nowrap; /* Prevent text wrapping */
-}
-
-li {
-  list-style-type: none; /* Remove bullet points from list items */
-}
-
-a {
-  text-decoration: none; /* Remove underline from links */
-  color: rgb(58, 58, 58); /* Dark gray text color */
-  font-size: 0.9em; /* Slightly smaller font size */
-  transition: color 0.4s; /* Smooth color transition */
-}
-
-a:hover {
-  border-bottom: rgb(58, 58, 58) solid 0.05rem; /* Add bottom border on hover */
-  transition: border-bottom 0.2s; /* Faster transition on hover */
-}
-
-a:visited {
-  color: rgb(68, 68, 68); /* Darker gray for visited links */
-}
-
-.main {
+.video-container {
   display: flex;
-  flex-direction: column; /* Column layout */
-  align-items: center; /* Center-align items */
-  justify-content: center; /* Center-align items */
-  gap: 1rem; /* Space between elements */
-}
-
-.product-card p {
-  text-align: left; /* Align text to the left */
-  width: 100%; /* Ensure paragraph takes full width */
-}
-.product-card {
-  display: flex;
-  flex-direction: column; /* Column layout */
-  align-items: center; /* Center-align items */
-  justify-content: center; /* Center-align items */
-  border: white solid 0.01rem; /* Subtle border */
-  color: rgb(161, 161, 161); /* Light gray text color */
-  margin: 1rem; /* Margin around the product card */
+  flex-direction: column;
+  /* Column layout */
+  align-items: center;
+  /* Center-align items */
+  justify-content: center;
+  /* Center-align items */
+  border: #f9f9f9 solid 0.01rem;
+  /* Subtle border */
+  color: rgb(161, 161, 161);
+  /* Light gray text color */
+  margin: 1rem;
+  /* Margin around the product card */
   padding: 2rem;
+  box-shadow: 0 0 11px 2px rgba(137, 137, 137, 0.377);
 
-  box-shadow: inset 0 0 12px 8px rgba(181, 181, 181, 0.119); /* Inner shadow for card */
+  /* Inner shadow for card */
   transition: 0.5s;
   border-radius: 5px;
 }
 
-.product-card:hover {
-  box-shadow: inset 0 0 30px 2px rgba(179, 179, 179, 0.377); /* Inner shadow for card */
+#card-video,
+.product-card img {
+  width: 72vw;
+  /* Set responsive width for the video and images */
+  height: auto;
+  /* Maintain aspect ratio */
+  max-width: 100%;
+  /* Prevent overflow */
+  max-height: 70vh;
+  /* Limit the maximum height */
+  opacity: 0.8;
+  /* Initial opacity for a semi-transparent effect */
+  transition: opacity 0.5s;
+  /* Smooth opacity transition */
+}
 
-  transition: 0.1s;
+#card-video:hover,
+.product-card img:hover {
+  opacity: 1;
+  /* Fully opaque on hover */
+}
+
+.video-caption {
+  padding: 1rem;
+  /* Padding inside the caption */
+  max-width: 61%;
+  /* Set width of the caption */
+}
+
+nav {
+  padding: 3rem;
+  /* Ample padding for navigation */
+  display: flex;
+  /* Flexbox layout for navigation items */
+  gap: 4rem;
+  /* Space between navigation items */
+  justify-content: center;
+  /* Center-align navigation items */
+  border-bottom: solid 0.01rem rgb(179, 179, 179);
+  /* Subtle bottom border */
+  text-wrap: nowrap;
+  /* Prevent text wrapping */
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
+}
+
+.nav-links {
+  white-space: nowrap;
+  /* Prevent text wrapping */
+}
+
+li {
+  list-style-type: none;
+  /* Remove bullet points from list items */
+}
+
+a {
+  text-decoration: none;
+  /* Remove underline from links */
+  color: rgb(58, 58, 58);
+  /* Dark gray text color */
+  font-size: 0.9em;
+  /* Slightly smaller font size */
+  transition: color 0.4s;
+  /* Smooth color transition */
+}
+
+a:hover {
+  border-bottom: rgb(58, 58, 58) solid 0.05rem;
+  /* Add bottom border on hover */
+  transition: border-bottom 0.2s;
+  /* Faster transition on hover */
+}
+
+a:visited {
+  color: rgb(68, 68, 68);
+  /* Darker gray for visited links */
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  /* Column layout */
+  align-items: center;
+  /* Center-align items */
+  justify-content: center;
+  /* Center-align items */
+  gap: 1rem;
+  /* Space between elements */
+}
+
+.product-card p {
+  /* Align text to the left */
+  text-align: left;
+  /* Ensure paragraph takes full width */
+  width: 100%;
+}
+
+/* Style for each product card/listing  */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  /* Column layout */
+  align-items: center;
+  /* Center-align items */
+  justify-content: center;
+  /* Center-align items */
+  /* Subtle border */
+  color: rgb(161, 161, 161);
+  /* Light gray text color */
+  margin: 1rem;
+  /* Margin around the product card */
+  padding: 2rem;
+  box-shadow: 0 0 30px 2px rgba(178, 178, 178, 0.155);
+
+  /* Inner shadow for card */
+  transition: 0.5s;
+  border-radius: 5px;
 }
 
 .product-grid {
+  border: #f9f9f9 solid 0.01rem;
+  box-shadow: 0 0 11px 2px rgba(137, 137, 137, 0.377);
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Create two equal columns */
-  gap: 2rem; /* Space between grid items */
-  margin: 3rem; /* Margin around the grid */
+  grid-template-columns: repeat(3, 1fr);
+  /* Create two equal columns */
+  gap: 2rem;
+  /* Space between grid items */
+  margin: 1rem;
+  /* Margin around the grid */
+  border-radius: 5px;
+  padding: 2rem;
 }
 
-button.login-btn {
-  font-size: 1rem; /* Adjust font size */
-  padding: 0.6rem; /* Padding for better clickability */
-  background: none; /* Transparent background */
-  border: none; /* Remove default border */
-  color: rgb(197, 0, 0); /* Dark gray text color */
-  cursor: pointer; /* Pointer cursor on hover */
-  border: solid black 0.05rem; /* Subtle black border */
+.product-grid .product-card {
+  border: 0.1rem solid rgba(205, 205, 205, 0.541);
+}
+
+.product-grid:hover .product-card:hover {
+  box-shadow: inset 0 0 30px 1px rgba(137, 137, 137, 0.34);
 }
 
 h1 {
-  text-align: center; /* Center-align heading */
-  margin: 1rem; /* Margin around the heading */
-  letter-spacing: 0.5rem; /* Spacing between letters */
-  font-weight: 300; /* Light font weight */
-  border-bottom: solid 0.01rem rgb(179, 179, 179); /* Subtle bottom border */
-  font-size: 1.5em; /* Adjusted font size */
-  color: rgb(120, 120, 120); /* Medium gray text color */
+  text-align: center;
+  /* Center-align heading */
+  margin: 1rem;
+  /* Margin around the heading */
+  letter-spacing: 0.5rem;
+  /* Spacing between letters */
+  font-weight: 300;
+  /* Light font weight */
+  border-bottom: solid 0.01rem rgb(179, 179, 179);
+  /* Subtle bottom border */
+  font-size: 1.5em;
+  /* Adjusted font size */
+  color: rgb(120, 120, 120);
+  /* Medium gray text color */
 }
 
 h2 {
-  font-weight: 100; /* Light font weight */
-  font-size: 1.2em; /* Adjusted font size */
-  color: rgb(120, 120, 120); /* Medium gray text color */
+  font-weight: 100;
+  /* Light font weight */
+  font-size: 1.2em;
+  /* Adjusted font size */
+  color: rgb(120, 120, 120);
+  /* Medium gray text color */
 }
 
 p {
-  color: rgb(120, 120, 120); /* Medium gray text color */
-  margin: 1rem; /* Top margin for paragraphs */
-  word-spacing: 2px; /* Space between words */
+  color: rgb(120, 120, 120);
+  /* Medium gray text color */
+  margin: 1rem;
+  /* Top margin for paragraphs */
+  word-spacing: 2px;
+  /* Space between words */
+}
+
+.listing-btn {
+  border: 0.1rem solid rgb(120, 120, 120);
+  padding: 0.5rem 1rem;
+  margin-top: 1.5rem;
 }
 
 /* p #price-txt {
@@ -152,6 +252,9 @@ footer p {
 
 footer {
   text-align: center;
-  border-top: 0.1rem solid rgb(255, 255, 255); /*  black border */
-  width: 100%; /* Full width */
+  border-top: 0.1rem solid #f9f9f9;
+  /*  black border */
+  width: 100%;
+  /* Full width */
+  margin-top: 3rem;
 }
