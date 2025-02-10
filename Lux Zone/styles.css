@@ -1,0 +1,148 @@
+/* Reset and Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Body Background Color */
+body {
+  background-color: #0c0c0c;
+}
+
+/* Palette Legend Section */
+.palette-lgnd {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  font-size: 1.1em;
+}
+
+/* Logo Styling */
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+/* Navigation Container */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Navigation List */
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+/* Navigation Links */
+.nav-list a {
+  color: #d30051;
+}
+
+li {
+  list-style-type: none;
+}
+
+li a {
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+/* Anchor Links */
+a {
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline #f9f9f9;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 4rem;
+  background-image: url('./images/hero-car.jpg');
+  background-size: cover;
+  background-position: center 45%;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  min-height: 90vh;
+  box-shadow: inset 22px 10px 70px;
+}
+
+/* Hero Overlay */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 50%;
+}
+
+/* Call-to-Action Container */
+.cta-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Call-to-Action Button */
+.hero .cta-button {
+  padding: 0.5rem 1rem;
+  border: 0.2rem #ff6f61 solid;
+  background-color: #d30051;
+  color: #f9f9f9;
+  border-radius: 50px;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+/* Hero Heading */
+.hero-content h1 {
+  font-size: 3rem;
+  color: #f9f9f9;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: #1a1a1a 1px 1px 5px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Hero Paragraph */
+.hero-content p {
+  font-size: 1.2rem;
+  color: #f9f9f9;
+  font-weight: 600;
+  border-radius: 2px;
+  max-width: 90%;
+  text-align: center;
+  word-spacing: 2px;
+  line-height: 1.5em;
+}
