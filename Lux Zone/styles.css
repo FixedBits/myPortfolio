@@ -21,7 +21,7 @@ body {
 
 /* Logo Styling */
 .logo img {
-  width: 100px;
+  width: 120px;
   height: auto;
 }
 
@@ -30,7 +30,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 /* Navigation List */
@@ -78,7 +78,7 @@ a:hover {
   background-position: center 45%;
   background-repeat: no-repeat;
   max-width: 100%;
-  min-height: 90vh;
+  min-height: 80vh;
   box-shadow: inset 22px 10px 70px;
 }
 
@@ -115,13 +115,14 @@ a:hover {
 /* Call-to-Action Button */
 .hero .cta-button {
   padding: 0.5rem 1rem;
-  border: 0.2rem #ff6f61 solid;
+  border: 0.2rem #ff3898 solid;
   background-color: #d30051;
   color: #f9f9f9;
   border-radius: 10px;
   margin-top: 1rem;
   text-decoration: none;
   font-size: 1.5em;
+  box-shadow: 5px 10px 10px #1a1a1a9d;
 }
 
 /* Hero Heading */
