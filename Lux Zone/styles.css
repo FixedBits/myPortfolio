@@ -32,6 +32,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem;
+  overflow: hidden;
 }
 
 /* Navigation List */
@@ -91,7 +92,7 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.331);
   z-index: 1;
 }
 
@@ -124,12 +125,12 @@ a:hover {
   text-decoration: none;
   font-size: 1.5em;
   box-shadow: 5px 10px 10px #1a1a1a9d;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .cta-button:hover {
   background-color: rgba(7, 7, 7, 0.632);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 /* Hero Heading */
@@ -154,4 +155,36 @@ a:hover {
   text-align: center;
   word-spacing: 2px;
   line-height: 1.5em;
+}
+
+body.gallery .hero {
+  background-image: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  background-size: cover;
+  background-position: center 45%;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  min-height: 80vh;
+  box-shadow: inset 22px 10px 70px;
+}
+
+/* Gallery Hero Overlay */
+.gallery .hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(28, 28, 28);
+  z-index: 1;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
