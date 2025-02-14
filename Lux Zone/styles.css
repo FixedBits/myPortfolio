@@ -187,7 +187,6 @@ body.gallery .hero {
   padding: 2rem;
   border: rgb(85, 0, 255) solid 2px; /* Blue border */
   box-sizing: border-box; /* Ensure padding is included in width/height */
-  overflow: hidden; /* Prevent overflow */
   width: 150%;
 }
 
@@ -197,7 +196,7 @@ body.gallery .hero {
   height: auto;
   display: block;
   border-radius: 10px;
-  border: rgb(228, 252, 69) solid 2px; /* Yellow border */
+  border: rgb(245, 255, 179) solid 2px; /* Yellow border */
   box-sizing: border-box; /* Ensure border is included in width/height */
 }
 
@@ -206,6 +205,6 @@ body.gallery .hero {
   height: auto;
   display: block;
   border-radius: 10px;
-  border: rgb(0, 255, 174) solid 2px; /* Yellow border */
+  border: rgb(118, 228, 255) solid 5px; /* Yellow border */
   box-sizing: border-box; /* Ensure border is included in width/height */
 }
