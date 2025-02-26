@@ -3,5 +3,9 @@
         "Haettenschweiler",
         "Pieza",
         "ＰＩＥＺＡ"
-    ]
+    ],
+    "markdown.validate.ignoredLinks": [
+        ".svg"
+    ],
+    "editor.rename.enablePreview": true
 }
