@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 /* Body Background Color */
@@ -75,7 +75,7 @@ a {
   justify-content: flex-end;
   align-items: center;
   padding: 4rem;
-  background-image: url('./images/hero-car.jpg');
+  background-image: url("./images/hero-car.jpg");
   background-size: cover;
   background-position: center 45%;
   background-repeat: no-repeat;
@@ -87,7 +87,7 @@ a {
 
 /* Hero Overlay */
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -148,7 +148,7 @@ a {
 
 /* Hero Paragraph */
 .hero-content p {
-  font-size: 1.2rem;
+  font-size: 20px;
   color: #f9f9f9;
   font-weight: 600;
   border-radius: 2px;
@@ -156,6 +156,12 @@ a {
   text-align: center;
   word-spacing: 2px;
   line-height: 1.5em;
+  margin-bottom: 2rem;
+}
+
+.blog-section {
+  border-radius: 20px;
+  box-shadow: inset 10px 0px 100px rgba(255, 255, 255, 0.351);
 }
 
 /* Gallery Hero Section */
@@ -168,7 +174,7 @@ body.gallery .hero {
 
 /* Gallery Hero Overlay */
 .gallery .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
