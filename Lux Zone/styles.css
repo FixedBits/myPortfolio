@@ -26,6 +26,10 @@ body {
   margin-left: 20px;
 }
 
+header{
+  position: inherit;
+}
+
 /* Navigation Container */
 .nav-container {
   display: flex;
@@ -33,6 +37,7 @@ body {
   align-items: center;
   padding: 1.5rem;
   overflow: hidden;
+  position: sticky;
 }
 
 /* Navigation List */
@@ -163,7 +168,8 @@ body.gallery .hero {
   justify-content: center;
   max-width: 100%;
   min-height: 100vh;
-  border: red solid 2px;
+  /* Border for testing purposes */
+  /* border: red solid 2px; */
 }
 
 /* Gallery Hero Overlay */
@@ -176,7 +182,8 @@ body.gallery .hero {
   height: 100%;
   background-color: rgb(23, 23, 23);
   z-index: 1;
-  border: rgb(116, 255, 215) solid 2px;
+  /* Border for testing purposes */
+  /* border: rgb(116, 255, 215) solid 2px; */
 }
 
 /* Gallery Grid */
@@ -185,7 +192,8 @@ body.gallery .hero {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   padding: 2rem;
-  border: rgb(85, 0, 255) solid 2px; /* Blue border */
+  /* Blue border */
+  /* border: rgb(85, 0, 255) solid 2px; */
   box-sizing: border-box; /* Ensure padding is included in width/height */
   width: 150%;
 }
