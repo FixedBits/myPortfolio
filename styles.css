@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -31,17 +31,21 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  transition: .8s ;
 }
 .sidebar-list:hover {
   box-shadow: 3px 3px 55px rgba(60, 255, 30, 0.795);
   backdrop-filter: blur(5px);
+  transition: .4s;
 }
 
 .sidebar-list a:hover {
-  background: red;
-  padding: 1rem;
+  background: rgba(210, 210, 210, 0.107);
 }
 
+.sidebar-list a {
+text-shadow: 0 5px 15px rgb(0, 0, 0);
+}
 .sidebar-list li {
   width: 100%;
 }
@@ -55,7 +59,7 @@ body {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.011);
 }
 
-nav li:first-child {
+:first-child {
   margin-right: auto;
 }
 .nav-list:hover {
