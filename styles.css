@@ -1,3 +1,4 @@
+/* Reset default styles and set font family */
 * {
   padding: 0;
   margin: 0;
@@ -5,6 +6,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Body styles including background image */
 body {
   background-image: url(/images/background/background.jpg);
   background-size: cover;
@@ -14,6 +16,7 @@ body {
   /* border: red solid 3px; */
 }
 
+/* Sidebar list styles */
 .sidebar-list {
   position: fixed;
   top: 0;
@@ -33,52 +36,114 @@ body {
   justify-content: flex-start;
   transition: 0.8s;
 }
+
+/* Sidebar list hover styles */
 .sidebar-list:hover {
   box-shadow: 3px 3px 35px rgb(20, 0, 195);
   backdrop-filter: blur(10px);
   transition: 0.5s;
 }
 
+/* Sidebar list anchor tag hover styles */
 .sidebar-list a:hover {
   background: rgba(210, 210, 210, 0.107);
 }
 
+/* Sidebar list anchor tag styles */
 .sidebar-list a {
   text-shadow: 0 5px 15px rgb(0, 0, 0);
 }
+
+/* Sidebar list list item styles */
 .sidebar-list li {
   width: 100%;
 }
 
+/* Navigation list styles */
 .nav-list {
   display: flex;
   padding: 1.5rem;
   gap: 2rem;
   justify-content: center;
-  background-color: rgba(75, 117, 255, 0.534);
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.011);
-  backdrop-filter: blur(15px);
+  background-color: rgba(75, 117, 255, 0.721);
+  box-shadow: 1px 2px 30px rgba(68, 36, 250, 0.571);
+  backdrop-filter: blur(10px);
 }
 
+/* Navigation list first child margin-right auto */
 :first-child {
   margin-right: auto;
 }
 
+/* Navigation link anchor tag styles */
 .nav-link a {
   color: aqua;
+  padding: 15px;
 }
 
+/* Navigation link anchor tag hover styles */
 /* .nav-link a:hover {
-  text-decoration: 1px underline;
+    text-decoration: 1px underline;
 } */
 
+/* Unordered list styles */
 nav ul {
   list-style-type: none;
 }
 
+/* Anchor tag styles */
 a {
   text-decoration: none;
 }
-main {
-  /* border: rgb(55, 0, 132) solid 5px; */
+
+/* Main container styles */
+/* .main-container {
+  border: rgb(55, 0, 132) solid 5px;
+  margin: 3rem;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.057);
+  backdrop-filter: blur(10px);
+} */
+
+/* Section container card styles */
+/* .section-container .card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  background-color: rgba(255, 220, 22, 0.573);
+  padding: 10px;
+} */
+
+/* Section container card paragraph styles */
+/* .section-container .card p {
+  border: white 2px solid;
+  padding: 5rem;
+}
+
+p {
+  border: white solid 5px;
+} */
+
+.nav-list .hideLogo {
+  display: flex;
+}
+
+.menu-btn {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+}
+
+/* Retry */
+@media (min-width: 799px) {
+  .sidebar-list {
+    display: none;
+  }
 }
