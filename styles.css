@@ -8,7 +8,7 @@
 
 /* Body styles including background image */
 body {
-  background-image: url(./images/background/background.jpg);
+  background-image: url(./images/blurry-gradient-haikei.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -78,7 +78,6 @@ body {
 /* Navigation link anchor tag styles */
 .nav-link a {
   color: aqua;
-  padding: 15px;
 }
 
 /* Navigation link anchor tag hover styles */
@@ -89,6 +88,11 @@ body {
 /* Unordered list styles */
 nav ul {
   list-style-type: none;
+}
+.nav-link img {
+  max-width: 88px;
+  height: auto;
+  fill: red;
 }
 
 /* Anchor tag styles */
