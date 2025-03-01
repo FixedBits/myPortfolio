@@ -51,7 +51,7 @@ body {
 
 /* Sidebar list anchor tag styles */
 .sidebar-list a {
-  text-shadow: 0 5px 15px rgb(0, 0, 0);
+  text-shadow: 0 5px 15px #000000;
 }
 
 /* Sidebar list list item styles */
@@ -71,7 +71,13 @@ body {
 }
 
 /* Navigation list first child margin-right auto */
-:first-child {
+/* Too generalzed - Stopped Use */
+/* :first-child {
+  margin-right: auto;
+} */
+
+/* Navigation list first li child margin-right auto */
+.nav-list > li:first-child {
   margin-right: auto;
 }
 
@@ -91,12 +97,20 @@ nav ul {
 }
 
 /* the hamburger menu svg style */
+/* Color can also be changed from the SVG directly */
 .nav-link svg {
   max-width: 88px;
   height: auto;
-  fill: #004cc5d0;
+  fill: #00ffff;
 }
 
+p {
+  font-size: 18px;
+  padding: 5rem;
+  margin: 3rem;
+  border: solid #000000 3px;
+  background-color: rgba(255, 255, 255, 0.272);
+}
 /* Anchor tag styles */
 a {
   text-decoration: none;
