@@ -17,6 +17,7 @@ body {
   background-position: center;
   min-height: 100vh;
   /* border: red solid 3px; */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Sidebar list styles */
