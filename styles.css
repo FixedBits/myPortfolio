@@ -24,71 +24,76 @@ body {
   height: 100vh;
   width: 250px;
   z-index: 999;
-  padding: 2rem;
+  padding: 1.5rem;
   gap: 2.2rem;
   justify-content: center;
-  background-color: rgba(75, 117, 255, 0.534);
-  box-shadow: 3px 3px 35px rgba(53, 30, 255, 0.722);
+  background-color: rgba(75, 117, 255, 0.591);
+  box-shadow: 3px 1px 35px rgba(53, 30, 255, 0.722);
   backdrop-filter: blur(5px);
   display: none;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  transition: 0.8s;
+  transition: 0.8s ease;
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+.sidebar-list::-webkit-scrollbar {
+  display: none;
 }
 
 /* Sidebar list hover styles */
 .sidebar-list:hover {
-  box-shadow: 3px 3px 35px rgb(20, 0, 195);
+  box-shadow: 3px 3px 35px rgba(20, 0, 195, 0.835);
   backdrop-filter: blur(10px);
-  transition: 0.5s;
+  transition: 0.5s ease;
 }
 
 /* Sidebar list anchor tag styles */
-.sidebar-list a {
+.sidebar-list a,
+.nav-links a {
   text-shadow: 0 5px 15px #c3c3c3;
 }
 
 .nav-links a:hover {
   background: rgba(26, 196, 234, 0.082);
 }
-
 /* Navigation list styles */
 .nav-list {
   display: flex;
   padding: 1.5rem;
   gap: 2rem;
   justify-content: center;
+  align-items: center;
   background-color: rgba(75, 117, 255, 0.722);
   box-shadow: 1px 2px 30px rgba(68, 36, 250, 0.571);
   backdrop-filter: blur(10px);
 }
 
 /* Navigation list first child margin-right auto */
-/* Too generalzed - Stopped Use */
+/* Too generalized - Stopped Use */
 /* :first-child {
-  margin-right: auto;
-} */
+    margin-right: auto;
+  } */
 
 /* Navigation list first li child margin-right auto */
 .nav-list > li:first-child {
   margin-right: auto;
 }
+
 /* Anchor tag styles */
 a {
   text-decoration: none;
   cursor: pointer;
   padding: 6px;
+  color: #00ffff; /* Moved from .nav-links a */
 }
 
 a:hover {
-  text-decoration: underline;
-  text-underline-offset: 0.4em; /* Adjust the value as needed */
-}
-
-/* Navigation link anchor tag styles */
-.nav-links a {
-  color: #00ffff;
+  text-decoration: underline #21caf09a;
+  text-underline-offset: 0.3em; /* Adjust the value as needed */
 }
 
 /* Unordered list styles */
@@ -105,7 +110,7 @@ nav ul {
 }
 
 .nav-link .menu-icon:hover {
-  background: hsla(180, 56%, 44%, 0.293);
+  background: hsla(180, 56%, 44%, 0.531);
 }
 
 p {
@@ -115,34 +120,6 @@ p {
   border: solid #000000 3px;
   background-color: rgba(255, 255, 255, 0.272);
 }
-
-/* Main container styles */
-/* .main-container {
-  border: rgb(55, 0, 132) solid 5px;
-  margin: 3rem;
-  height: 100vh;
-  background-color: rgba(255, 255, 255, 0.057);
-  backdrop-filter: blur(10px);
-} */
-
-/* Section container card styles */
-/* .section-container .card {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 10px;
-  background-color: rgba(255, 220, 22, 0.573);
-  padding: 10px;
-} */
-
-/* Section container card paragraph styles */
-/* .section-container .card p {
-  border: white 2px solid;
-  padding: 5rem;
-}
-
-p {
-  border: white solid 5px;
-} */
 
 .nav-list .hideLogo {
   display: flex;
@@ -161,7 +138,6 @@ p {
   }
 }
 
-/* Retry */
 @media (min-width: 799px) {
   .sidebar-list {
     display: none;
