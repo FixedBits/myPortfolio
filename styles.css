@@ -16,7 +16,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
-  /* border: red solid 3px; */
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
@@ -119,9 +118,16 @@ nav ul {
 /* The hamburger menu svg style */
 /* Color can also be changed from the SVG directly */
 .nav-link svg {
-  max-width: 40px;
-  height: auto;
+  width: 25px;
+  height: 25px;
   fill: #00ffff;
+}
+
+/* Reserve space for SVGs */
+.hideLogo svg {
+  max-height: 500px;
+  width: 50px;
+  height: 50px;
 }
 
 /* Hamburger menu icon hover styles */
@@ -152,7 +158,7 @@ p {
 }
 
 /* Media query for mobile devices */
-@media (max-width: 800px) {
+@media (max-width: 878px) {
   .hideOnMobile {
     display: none;
   }
