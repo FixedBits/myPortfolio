@@ -1,16 +1,16 @@
-<svg viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <filter id="blur1" x="-10%" y="-10%" width="120%" height="120%">
-      <feGaussianBlur stdDeviation="163" result="effect1_foregroundBlur"></feGaussianBlur>
+      <feGaussianBlur stdDeviation="326" result="effect1_foregroundBlur"></feGaussianBlur>
     </filter>
   </defs>
-  <rect width="960" height="540" fill="#6600FF"></rect>
+  <rect width="1920" height="1080" fill="#6600FF"></rect>
   <g filter="url(#blur1)">
-    <circle cx="706" cy="324" fill="#00CC99" r="363"></circle>
-    <circle cx="952" cy="337" fill="#6600FF" r="363"></circle>
-    <circle cx="747" cy="111" fill="#00CC99" r="363"></circle>
-    <circle cx="98" cy="95" fill="#00CC99" r="363"></circle>
-    <circle cx="500" cy="400" fill="#6600FF" r="363"></circle>
-    <circle cx="185" cy="504" fill="#00CC99" r="363"></circle>
+    <circle cx="1412" cy="648" fill="#00CC99" r="726"></circle>
+    <circle cx="1904" cy="674" fill="#6600FF" r="726"></circle>
+    <circle cx="1494" cy="222" fill="#00CC99" r="726"></circle>
+    <circle cx="196" cy="190" fill="#00CC99" r="726"></circle>
+    <circle cx="1000" cy="800" fill="#6600FF" r="726"></circle>
+    <circle cx="370" cy="1008" fill="#00CC99" r="726"></circle>
   </g>
 </svg>
