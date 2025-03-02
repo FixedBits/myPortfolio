@@ -30,16 +30,18 @@ body {
   padding: 1.5rem;
   gap: 2.2rem;
   justify-content: center;
-  background-color: rgba(75, 117, 255, 0.591);
+  background-color: rgba(75, 117, 255, 0.296);
   box-shadow: 3px 1px 35px rgba(53, 30, 255, 0.722);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(5px);
   display: none;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   transition: 0.8s ease;
-  overflow: auto;
-  scrollbar-width: none; /* Hide scrollbar */
+  overflow: auto; /* Enables scroll bar & scrolling in sidebar */
+  scrollbar-width: none; /* Hides scrollbar & Scrolling remains enabled*/
+
+  /* Font style */
   font-family: 'Merriweather Sans', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -63,6 +65,7 @@ body {
 .nav-links a {
   text-shadow: 0 5px 15px #024cac;
   transition: 0.3s;
+  padding: 6px;
 }
 
 /* Sidebar list anchor tag hover styles */
@@ -82,6 +85,7 @@ body {
   background-color: rgba(75, 117, 255, 0.722);
   box-shadow: 1px 2px 30px rgba(68, 36, 250, 0.571);
   backdrop-filter: blur(10px);
+  /* Font style */
   font-family: 'Merriweather Sans', sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -103,7 +107,6 @@ body {
 a {
   text-decoration: none;
   cursor: pointer;
-  padding: 6px;
   color: #00ffff;
 }
 
@@ -115,14 +118,17 @@ nav ul {
 /* The hamburger menu svg style */
 /* Color can also be changed from the SVG directly */
 .nav-link svg {
-  max-width: 150px;
+  max-width: 40px;
   height: auto;
   fill: #00ffff;
 }
 
 /* Hamburger menu icon hover styles */
 .nav-link .menu-icon:hover {
-  background: hsla(180, 56%, 44%, 0.531);
+  background: hsla(224, 96%, 62%, 0.748);
+  border: 1px solid hsla(220, 74%, 56%, 0.584);
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.195);
 }
 
 /* Paragraph styles */
