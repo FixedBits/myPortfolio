@@ -1,9 +1,12 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 /* Reset default styles and set font family */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
 }
 
 /* Body styles including background image */
@@ -29,14 +32,18 @@ body {
   justify-content: center;
   background-color: rgba(75, 117, 255, 0.591);
   box-shadow: 3px 1px 35px rgba(53, 30, 255, 0.722);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(4px);
   display: none;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   transition: 0.8s ease;
   overflow: auto;
-  scrollbar-width: none;
+  scrollbar-width: none; /* Hide scrollbar */
+  font-family: 'Merriweather Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
@@ -54,29 +61,38 @@ body {
 /* Sidebar list anchor tag styles */
 .sidebar-list a,
 .nav-links a {
-  text-shadow: 0 5px 15px #c3c3c3;
+  text-shadow: 0 5px 15px #024cac;
+  transition: 0.3s;
 }
 
+/* Sidebar list anchor tag hover styles */
 .nav-links a:hover {
-  background: rgba(26, 196, 234, 0.082);
+  background: rgba(204, 235, 241, 0.205);
+  border-radius: 3px;
+  transition: 0.1s;
 }
+
 /* Navigation list styles */
 .nav-list {
-  display: flex;
   padding: 1.5rem;
   gap: 2rem;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(75, 117, 255, 0.722);
   box-shadow: 1px 2px 30px rgba(68, 36, 250, 0.571);
   backdrop-filter: blur(10px);
+  font-family: 'Merriweather Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
-/* Navigation list first child margin-right auto */
-/* Too generalized - Stopped Use */
-/* :first-child {
-    margin-right: auto;
-  } */
+/* Additional styling for nav-list a hover links - Temp */
+/* .nav-list a:hover {
+  text-decoration: underline #21caf09a;
+  text-underline-offset: 0.3em;
+} */
 
 /* Navigation list first li child margin-right auto */
 .nav-list > li:first-child {
@@ -88,12 +104,7 @@ a {
   text-decoration: none;
   cursor: pointer;
   padding: 6px;
-  color: #00ffff; /* Moved from .nav-links a */
-}
-
-a:hover {
-  text-decoration: underline #21caf09a;
-  text-underline-offset: 0.3em; /* Adjust the value as needed */
+  color: #00ffff;
 }
 
 /* Unordered list styles */
@@ -101,7 +112,7 @@ nav ul {
   list-style-type: none;
 }
 
-/* the hamburger menu svg style */
+/* The hamburger menu svg style */
 /* Color can also be changed from the SVG directly */
 .nav-link svg {
   max-width: 150px;
@@ -109,10 +120,12 @@ nav ul {
   fill: #00ffff;
 }
 
+/* Hamburger menu icon hover styles */
 .nav-link .menu-icon:hover {
   background: hsla(180, 56%, 44%, 0.531);
 }
 
+/* Paragraph styles */
 p {
   font-size: 18px;
   padding: 5rem;
@@ -121,25 +134,22 @@ p {
   background-color: rgba(255, 255, 255, 0.272);
 }
 
+/* Logo visibility styles */
 .nav-list .hideLogo {
   display: flex;
 }
 
+/* Menu button styles */
 .menu-btn {
   display: none;
 }
 
+/* Media query for mobile devices */
 @media (max-width: 800px) {
   .hideOnMobile {
     display: none;
   }
   .menu-btn {
     display: block;
-  }
-}
-
-@media (min-width: 799px) {
-  .sidebar-list {
-    display: none;
   }
 }

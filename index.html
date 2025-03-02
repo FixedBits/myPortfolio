@@ -2,16 +2,23 @@
 <html lang="en">
 
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" type="image/x-icon" href="./images/Victor-favicon.svg">
+        <!-- Meta and link tags for character set, viewport, stylesheet, favicon, and title -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" type="image/x-icon" href="./images/Victor-favicon.svg" />
         <title>Full-stack Web Developer</title>
     </head>
 
     <body>
+
+        <!-- Navigation container -->
         <nav class="nav-container">
+
+            <!-- Sidebar list for navigation links -->
             <ul class="sidebar-list" id="sidebar">
+
+                <!-- Sidebar close button -->
                 <li class="nav-link" onclick="hideSidebar()">
                     <a href="#" onclick="event.preventDefault();">
                         <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
@@ -21,22 +28,27 @@
                         </svg>
                     </a>
                 </li>
+
+                <!-- Sidebar navigation links -->
                 <li class="nav-links"><a href="#">Home</a></li>
                 <li class="nav-links"><a href="#">Experience</a></li>
                 <li class="nav-links"><a href="#">About</a></li>
                 <li class="nav-links"><a href="#">Blog</a></li>
                 <li class="nav-links"><a href="#">Contact</a></li>
             </ul>
+
+            <!-- Top navigation list -->
             <ul class="nav-list">
-                <li class="nav-link hideOnMobile hideLogo"><a href="#">
+
+                <!-- Logo link in the navigation bar -->
+                <li class="nav-link hideOnMobile hideLogo">
+                    <a href="#">
                         <?xml version="1.0" standalone="no"?>
                         <!DOCTYPE svg
                             PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg" height="50px"
                             viewBox="0 0 2000.000000 458.000000" preserveAspectRatio="xMidYMid meet">
-                            <metadata>
-                                Created by potrace 1.11, written by Peter Selinger 2001-2013
-                            </metadata>
+                            <metadata>Created by potrace 1.11, written by Peter Selinger 2001-2013</metadata>
                             <g transform="translate(0.000000,458.000000) scale(0.100000,-0.100000)" fill="#00ffff">
                                 <path
                                     d="M13 4533 c2 -10 460 -976 1017 -2148 557 -1172 1036 -2181 1065 -2242 l54 -113 768 0 769 0 121 207 c67 115 352 602 633 1083 282 481 562 961 623 1065 129 220 187 350 229 513 26 101 31 140 35 287 4 131 1 192 -11 265 -91 521 -498 942 -1026 1060 -157 35 -286 40 -1038 40 -626 0 -733 -2 -730 -14 2 -8 95 -206 207 -440 l204 -425 521 -3 521 -3 58 -27 c75 -35 157 -114 192 -185 40 -79 47 -207 17 -276 -37 -84 -1285 -2208 -1293 -2200 -6 6 -878 1839 -1617 3398 l-81 170 -622 3 c-589 2 -621 1 -616 -15z" />
@@ -44,11 +56,15 @@
                         </svg>
                     </a>
                 </li>
+
+                <!-- Top navigation links -->
                 <li class="nav-links hideOnMobile"><a href="#">Home</a></li>
                 <li class="nav-links hideOnMobile"><a href="#">Experience</a></li>
                 <li class="nav-links hideOnMobile"><a href="#">About</a></li>
                 <li class="nav-links hideOnMobile"><a href="#">Blog</a></li>
                 <li class="nav-links hideOnMobile"><a href="#">Contact</a></li>
+
+                <!-- Sidebar open button -->
                 <li class="nav-link menu-btn" onclick="showSidebar()">
                     <a href="#" onclick="event.preventDefault();">
                         <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
@@ -59,13 +75,29 @@
                 </li>
             </ul>
         </nav>
+
+        <!-- Main content container -->
         <main class="main-container">
-            <section class="section-container">
-                <!-- <div class="card">
-                <p>Hero section</p>
-            </div> -->
-            </section>
+            <!-- <section class="section-container">
+                <div class="card">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate at enim perspiciatis hic,
+                        blanditiis provident saepe facere mollitia numquam deserunt similique. Eos, nostrum! Eos velit
+                        corrupti quidem odit laboriosam? Tempore!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate at enim perspiciatis hic,
+                        blanditiis provident saepe facere mollitia numquam deserunt similique. Eos, nostrum! Eos velit
+                        corrupti quidem odit laboriosam? Tempore!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate at enim perspiciatis hic,
+                        blanditiis provident saepe facere mollitia numquam deserunt similique. Eos, nostrum! Eos velit
+                        corrupti quidem odit laboriosam? Tempore!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate at enim perspiciatis hic,
+                        blanditiis provident saepe facere mollitia numquam deserunt similique. Eos, nostrum! Eos velit
+                        corrupti quidem odit laboriosam? Tempore!</p>
+                </div>
+
+            </section> -->
         </main>
+
+        <!-- JavaScript for functionality -->
         <script>
             function showSidebar() {
                 const sidebar = document.getElementById('sidebar');
@@ -76,6 +108,7 @@
                 sidebar.style.display = 'none';
             }
         </script>
+
     </body>
 
 </html>
