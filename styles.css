@@ -169,10 +169,23 @@ p {
 }
 
 .section-container {
-  padding: 20px;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
+  /* Aligns items with equal height */
+  align-items: stretch;
+}
+
+/* Card styles */
+.cards {
+  border-radius: 20px;
+  background-color: rgba(232, 232, 233, 0.082);
+  box-shadow: 1px 2px 30px rgba(68, 36, 250, 0.571);
+  backdrop-filter: blur(5px);
+  width: 300px;
+  padding: 20px;
+  margin: 70px 10px;
 }
 
 .hero img {
@@ -195,6 +208,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -204,16 +218,6 @@ p {
   width: 500px;
   height: auto;
   filter: opacity(80%);
-}
-/* Card styles */
-.cards {
-  border-radius: 20px;
-  background-color: rgba(232, 232, 233, 0.082);
-  box-shadow: 1px 2px 30px rgba(68, 36, 250, 0.571);
-  backdrop-filter: blur(5px);
-  width: 300px;
-  padding: 20px;
-  margin: 70px 10px;
 }
 
 /* Media query for mobile devices */
