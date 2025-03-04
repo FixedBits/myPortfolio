@@ -3,15 +3,15 @@
 
 /* Root variables for colors */
 :root {
-  --background-color: rgba(75, 117, 255, 0.296); /* (a semi-transparent blue) */
-  --box-shadow-color: rgba(53, 30, 255, 0.722); /* (a dark blue/purple) */
-  --text-shadow-color: #024cac; /* (a bright blue) */
-  --link-text-color: #00ffff; /* (a bright cyan) */
-  --hover-background-color: rgba(204, 235, 241, 0.205); /* (a very light, semi-transparent blue) */
-  --hover-box-shadow-color: rgba(20, 0, 195, 0.835); /* (a dark blue) */
-  --menu-icon-color: #00ffff; /* (a bright cyan) */
-  --hover-menu-background-color: hsla(224, 96%, 62%, 0.748); /* (a semi-transparent light blue) */
-  --hover-menu-border-color: hsla(220, 74%, 56%, 0.584); /* (a semi-transparent blue) */
+  --background-color: rgba(75, 117, 255, 0.296);
+  --box-shadow-color: rgba(68, 36, 250, 0.571);
+  --text-shadow-color: #024cac;
+  --link-text-color: #00ffff;
+  --hover-background-color: rgba(204, 235, 241, 0.205);
+  --hover-box-shadow-color: rgba(20, 0, 195, 0.835);
+  --menu-icon-color: #00ffff;
+  --hover-menu-background-color: hsla(224, 96%, 62%, 0.748);
+  --hover-menu-border-color: hsla(220, 74%, 56%, 0.584);
 }
 
 /* Reset default styles and set font family */
@@ -25,6 +25,7 @@
 /* Body styles including background image */
 body {
   background-image: url(./images/blurry-gradient-haikei.png);
+  /* background-color: rgb(37, 37, 37); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -168,6 +169,69 @@ p {
   display: none;
 }
 
+/* 
+.main-container {
+display: flex;
+flex-direction: column;
+
+} */
+
+.hero {
+  width: 100%;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero img {
+  margin: 2rem;
+  padding: 2rem;
+  width: 560px;
+  height: auto;
+  opacity: calc(83%);
+  filter: drop-shadow(5px 5px 8px rgba(41, 223, 255, 0.721));
+}
+
+/* Styles for the card to the side of the hero illustration */
+.hero-card {
+  border-radius: 20px;
+  background-color: rgba(232, 232, 233, 0.082);
+  box-shadow: -3px 2px 10px rgba(0, 0, 0, 0.208);
+  backdrop-filter: blur(5px);
+  width: 700px;
+  height: 400px;
+  padding: 2rem;
+  margin: 5rem 1rem 1rem 2rem;
+}
+
+.cta-btn {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.cta-btn a {
+  border-radius: 10px;
+  padding: 15px;
+  background-color: rgba(6, 16, 41, 0.411);
+  box-shadow: -2px 3px 5px rgba(0, 53, 244, 0.603);
+  white-space: nowrap;
+  font-size: 20px;
+  margin: 2rem;
+}
+
+.cta-btn a:hover {
+  border-radius: 10px;
+  background-color: rgba(35, 96, 252, 0.186);
+  box-shadow: -2px 3px 8px rgba(0, 53, 244, 0.521);
+  white-space: nowrap;
+}
 .section-container {
   display: flex;
   flex-wrap: wrap;
@@ -177,7 +241,13 @@ p {
   align-items: stretch;
 }
 
-/* Card styles */
+.banner {
+  background-color: rgba(68, 36, 250, 0.571);
+  border: white solid 3px;
+  height: 150px;
+}
+
+/* Cards styles */
 .cards {
   border-radius: 20px;
   background-color: rgba(232, 232, 233, 0.082);
@@ -186,38 +256,6 @@ p {
   width: 300px;
   padding: 20px;
   margin: 70px 10px;
-}
-
-.hero img {
-  margin: 2rem;
-  padding: 2rem;
-  width: 500px;
-  height: auto;
-  filter: opacity(80%);
-}
-
-.hero {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-}
-
-.hero-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.hero img {
-  margin: 2rem;
-  padding: 2rem;
-  width: 500px;
-  height: auto;
-  filter: opacity(80%);
 }
 
 /* Media query for mobile devices */
