@@ -229,3 +229,9 @@ p {
     display: block;
   }
 }
+
+@media (max-width: 400px) {
+  .sidebar-list {
+    width: 100%;
+  }
+}
