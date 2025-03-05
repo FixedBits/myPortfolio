@@ -24,8 +24,9 @@
 
 /* Body styles including background image */
 body {
-  background-image: url(./images/blurry-gradient-haikei.png);
+  /* background: hsla(213, 77%, 14%, 1); */
   /* background-color: rgb(37, 37, 37); */
+  background-image: url(./images/background.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -33,6 +34,14 @@ body {
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+h1 {
+  font-size: 2.3em;
+}
+
+h2 {
+  font-size: 1.6em;
+  font-weight: 400;
+}
 /* Sidebar list styles */
 .sidebar-list {
   position: fixed;
@@ -188,8 +197,9 @@ flex-direction: column;
   gap: 10px;
 }
 
+/* Will add img */
 .hero img {
-  margin: 2rem;
+  margin: 1rem;
   padding: 2rem;
   width: 560px;
   height: auto;
@@ -199,16 +209,21 @@ flex-direction: column;
 
 /* Styles for the card to the side of the hero illustration */
 .hero-card {
-  border-radius: 20px;
-  background-color: rgba(232, 232, 233, 0.082);
-  box-shadow: -3px 2px 10px rgba(0, 0, 0, 0.208);
+  background-color: rgba(20, 199, 240, 0.204);
+  box-shadow: -3px 2px 10px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(5px);
-  width: 700px;
-  height: 400px;
+  width: 100%;
+  height: auto;
   padding: 2rem;
-  margin: 5rem 1rem 1rem 2rem;
 }
 
+.hero-card p {
+  padding: 0;
+  width: 500px;
+  font-size: 18px;
+  margin: 3rem 0;
+  text-wrap: wrap;
+}
 .cta-btn {
   display: flex;
   justify-content: center;
@@ -242,7 +257,15 @@ flex-direction: column;
 }
 
 .banner {
-  background-color: rgba(68, 36, 250, 0.059);
+  background: hsla(341, 94%, 49%, 1);
+
+  background: linear-gradient(90deg, hsla(341, 94%, 49%, 1) 0%, hsla(16, 90%, 77%, 1) 100%);
+
+  background: -moz-linear-gradient(90deg, hsla(341, 94%, 49%, 1) 0%, hsla(16, 90%, 77%, 1) 100%);
+
+  background: -webkit-linear-gradient(90deg, hsla(341, 94%, 49%, 1) 0%, hsla(16, 90%, 77%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F40752", endColorstr="#F9AB8F", GradientType=1 );
   border-radius: 5px;
   /* border: white solid 3px; */
   height: 150px;
