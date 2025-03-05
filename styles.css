@@ -229,7 +229,7 @@ flex-direction: column;
 .cta-btn a:hover {
   border-radius: 10px;
   background-color: rgba(35, 96, 252, 0.186);
-  box-shadow: -2px 3px 8px rgba(0, 53, 244, 0.521);
+  box-shadow: -2px 3px 8px rgba(0, 53, 244, 0.534);
   white-space: nowrap;
 }
 .section-container {
@@ -242,16 +242,19 @@ flex-direction: column;
 }
 
 .banner {
-  background-color: rgba(68, 36, 250, 0.571);
-  border: white solid 3px;
+  background-color: rgba(68, 36, 250, 0.059);
+  border-radius: 5px;
+  /* border: white solid 3px; */
   height: 150px;
+  box-shadow: inset -3px -3px 4px rgba(0, 53, 244, 0.17);
 }
 
 /* Cards styles */
 .cards {
+  border: solid 7px var(--background-color);
   border-radius: 20px;
   background-color: rgba(232, 232, 233, 0.082);
-  box-shadow: 1px 2px 30px rgba(68, 36, 250, 0.571);
+  box-shadow: 1px 2px 30px rgba(68, 36, 250, 0.262);
   backdrop-filter: blur(5px);
   width: 300px;
   padding: 20px;
