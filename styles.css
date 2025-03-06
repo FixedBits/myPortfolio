@@ -205,16 +205,14 @@ ul {
   display: flex;
   align-items: stretch;
   flex-wrap: wrap;
-  gap: 5rem;
   /* border: rgb(0, 247, 66) solid 5px; */
 }
 
 /* Hero image styles */
 .hero img {
-  margin: 1rem;
-  padding: 1rem;
+  padding: 5px;
   border-radius: 50%;
-  max-width: 340px;
+  max-width: 300px;
   height: auto;
   opacity: calc(88%);
   box-shadow: -4px 2px 50px rgba(215, 5, 5, 0.419);
@@ -226,7 +224,7 @@ ul {
 .hero-card {
   height: auto;
   padding: 4rem 0;
-  margin: 0 4rem;
+  margin: 0 11rem 3rem 0rem;
   /* border: rgb(191, 215, 8) solid 5px; */
 }
 
@@ -234,7 +232,7 @@ ul {
 .hero-card p {
   font-size: 18px;
   font-weight: 300;
-  max-width: 700px;
+  max-width: 600px;
   margin: 2rem 0;
   /* border: rgb(91, 8, 215) solid 5px; */
 }
@@ -293,15 +291,15 @@ ul {
     width: 100%;
   }
   .hero h1 {
-    font-size: 26px;
-    font-weight: 600;
+    font-size: 35px;
+    font-weight: 700;
   }
   .hero h2 {
-    font-size: 23px;
-    font-weight: 500;
+    font-size: 25px;
+    font-weight: 600;
   }
   .hero-content {
-    margin: 0 1rem;
+    margin: 0 5px;
   }
   .hero-card {
     margin: 0 1rem;
