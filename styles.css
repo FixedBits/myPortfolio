@@ -282,8 +282,7 @@ ul {
 }
 
 .section-container > h1 {
-    position: absolute;
-    text-align: center; /* Centers the text within the h1 */
+  position: absolute;
 }
 
 /* Media query for mobile devices */
