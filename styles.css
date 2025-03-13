@@ -126,8 +126,8 @@ ul {
 
 /* Hamburger menu SVG style */
 .nav-link svg {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   fill: var(--menu-icon-color);
   filter: drop-shadow(-4px 2px 1px rgba(4, 86, 99, 0.192));
 }
@@ -136,6 +136,7 @@ ul {
 .hideLogo svg {
   width: 50px;
   height: 50px;
+  filter: drop-shadow(-4px 2px 1px rgba(5, 21, 31, 0.263));
 }
 
 /* Hamburger menu icon hover styles */
@@ -175,7 +176,7 @@ ul {
   font-size: 4em;
   font-weight: 800;
   display: flex;
-  text-shadow: 2px 2px 4px rgba(0, 18, 78, 0.697);
+  text-shadow: -2px 2px 3px rgba(0, 18, 78, 0.697);
 }
 
 .hero h2 {
@@ -216,12 +217,12 @@ ul {
 /* Hero image styles */
 .hero img {
   padding: 5px;
-  border-radius: 50%;
+  border-radius: 10px;
   max-width: 300px;
-  height: auto;
-  opacity: calc(88%);
-  box-shadow: -9px 4px 6px rgba(45, 209, 255, 0.803);
-  filter: drop-shadow(-5px 5px 8px rgb(3, 51, 59));
+  height: 400px;
+  opacity: calc(89%);
+  box-shadow: -9px 4px 6px rgba(45, 209, 255, 0.889);
+  filter: drop-shadow(-5px 5px 8px rgba(7, 201, 255, 0.855));
   /* border: rgb(250, 130, 31) solid 5px; */
 }
 
@@ -236,9 +237,10 @@ ul {
 /* Hero card paragraph styles */
 .hero-card p {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 500;
   max-width: 600px;
   margin: 2rem 0;
+
   /* border: rgb(91, 8, 215) solid 5px; */
 }
 
