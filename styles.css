@@ -191,6 +191,7 @@ ul {
   gap: 20px;
   justify-content: center;
   align-items: stretch;
+  position: relative; /* To allow absolute positioning of the h1 */
   /* border: rgb(0, 0, 0) solid 5px; */
 }
 
@@ -280,9 +281,9 @@ ul {
   box-shadow: inset -3px -3px 4px rgba(0, 53, 244, 0.17);
 }
 
-#experience {
-  scroll-behavior: smooth;
-  scroll-snap-type: proximity;
+.section-container > h1 {
+    position: absolute;
+    text-align: center; /* Centers the text within the h1 */
 }
 
 /* Media query for mobile devices */
