@@ -168,7 +168,7 @@ ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /* border: rgb(0, 229, 255) solid 5px; */
+  /* border: rgb(47, 117, 37) solid 5px; */
 }
 
 .hero h1 {
@@ -184,44 +184,20 @@ ul {
   font-weight: 600;
 }
 
-/* Section container styles */
-.section-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  align-items: stretch;
-  position: relative; /* To allow absolute positioning of the h1 */
-  /* border: rgb(0, 0, 0) solid 5px; */
-}
-
-/* Cards styles */
-.cards {
-  border: solid 7px var(--background-color);
-  border-radius: 20px;
-  background-color: rgba(232, 232, 233, 0.082);
-  box-shadow: 1px 2px 30px rgba(68, 36, 250, 0.262);
-  backdrop-filter: blur(5px);
-  width: 300px;
-  padding: 20px;
-  margin: 70px 10px;
-}
-
 /* Hero content styles */
-/* Revise for use */
-.hero-content {
+/* Check for use - DRY */
+/* .hero-content {
   display: flex;
-  align-items: stretch;
+  align-items: center;
   flex-wrap: wrap;
-  /* border: rgb(0, 247, 66) solid 5px; */
-}
+  border: rgb(247, 0, 0) solid 5px;
+} */
 
 /* Hero image styles */
 .hero img {
-  padding: 5px;
-  border-radius: 10px;
-  max-width: 300px;
-  height: 400px;
+  border-radius: 25px;
+  max-width: 250px;
+  height: auto;
   opacity: calc(89%);
   box-shadow: -9px 4px 6px rgba(45, 209, 255, 0.889);
   filter: drop-shadow(-5px 5px 8px rgba(7, 201, 255, 0.855));
@@ -230,20 +206,18 @@ ul {
 
 /* 2 cards - Hero card styles */
 .hero-card {
-  height: auto;
   padding: 2rem 0;
-  margin: 0 11rem 3rem 0rem;
-  /* border: rgb(191, 215, 8) solid 5px; */
+  margin: 0 8rem;
+  /* border: rgb(16, 255, 72) solid 5px; */
 }
 
 /* Hero card paragraph styles */
 .hero-card p {
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 2;
   font-weight: 500;
-  max-width: 600px;
   margin: 2rem 0;
-
-  /* border: rgb(91, 8, 215) solid 5px; */
+  /* border: rgb(137, 12, 246) solid 5px; */
 }
 
 /* Call-to-action button styles */
@@ -282,6 +256,28 @@ ul {
   box-shadow: inset -3px -3px 4px rgba(0, 53, 244, 0.17);
 }
 
+/* Section container styles */
+.section-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  position: relative; /* To allow absolute positioning of the h1 */
+  /* border: rgba(0, 200, 255, 0.788) solid 5px; */
+}
+
+/* Cards styles */
+.cards {
+  border: solid 7px var(--background-color);
+  border-radius: 20px;
+  background-color: rgba(232, 232, 233, 0.082);
+  box-shadow: 1px 2px 30px rgba(68, 36, 250, 0.262);
+  backdrop-filter: blur(5px);
+  width: 300px;
+  padding: 20px;
+  margin: 70px 10px;
+  /* border: rgb(147, 71, 24) solid 5px; */
+}
 .section-container > h1 {
   position: absolute;
 }
