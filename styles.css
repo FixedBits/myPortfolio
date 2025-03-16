@@ -208,6 +208,7 @@ ul {
 }
 
 /* Hero content styles */
+/* Revise for use */
 .hero-content {
   display: flex;
   align-items: stretch;
@@ -227,7 +228,7 @@ ul {
   /* border: rgb(250, 130, 31) solid 5px; */
 }
 
-/* Hero card styles */
+/* 2 cards - Hero card styles */
 .hero-card {
   height: auto;
   padding: 2rem 0;
