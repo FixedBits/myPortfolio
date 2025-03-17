@@ -3,13 +3,13 @@
 
 /* Root variables for colors */
 :root {
-  --background-color: rgba(75, 117, 255, 0.296);
+  --background-color: rgba(111, 0, 255, 0.364);
   --box-shadow-color: rgba(68, 36, 250, 0.571);
   --text-shadow-color: #024cac;
-  --link-text-color: #00ffff;
+  --link-text-color: #00ffea;
   --hover-background-color: rgba(204, 235, 241, 0.205);
   --hover-box-shadow-color: rgba(20, 0, 195, 0.835);
-  --menu-icon-color: #00ffff;
+  --menu-icon-color: #00ffcc;
   --hover-menu-background-color: hsla(224, 96%, 62%, 0.748);
   --hover-menu-border-color: hsla(220, 74%, 56%, 0.584);
 }
@@ -29,10 +29,11 @@ html {
 /* Body styles including background image */
 body {
   /* Background image and other properties */
-  background-image: url(./images/background.png);
+  background-image: url(./images/bgfr.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   min-height: 100vh;
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
@@ -44,7 +45,7 @@ body {
   right: 0;
   height: 100vh;
   width: 250px;
-  z-index: 999;
+  z-index: 1000;
   padding: 1.5rem;
   gap: 2.2rem;
   justify-content: center;
@@ -92,15 +93,22 @@ body {
   transition: 0.1s;
 }
 
+.nav-container {
+  position: relative; /* Ensure the nav container provides context */
+  z-index: 1000; /* Place the nav on top of other content */
+  width: 100%; /* Make sure it spans the full width */
+}
 /* Navigation list styles */
 .nav-list {
-  margin: 0 5%;
+  position: sticky;
+  top: 0; /* Keeps the navbar at the top of the viewport */
+  z-index: 999; /* Ensures it stays above other content */
   padding: 1.5rem;
   gap: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(13px);
   font-family: "Poppins", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -173,7 +181,7 @@ ul {
 }
 
 .hero h1 {
-  color: var(--link-text-color);
+  color: antiquewhite;
   font-size: 4em;
   font-weight: 800;
   display: flex;
@@ -183,6 +191,7 @@ ul {
 .hero h2 {
   font-size: 1.8em;
   font-weight: 600;
+  color: antiquewhite;
 }
 
 /* Hero content styles */
@@ -196,13 +205,25 @@ ul {
 
 /* Hero image styles */
 .hero img {
-  border-radius: 25px;
-  max-width: 250px;
+  background-color: rgba(66, 60, 243, 0.26);
+  border-radius: 10%;
+  max-width: 350px;
   height: auto;
   opacity: calc(89%);
-  box-shadow: -9px 4px 6px rgba(45, 209, 255, 0.889);
-  filter: drop-shadow(-5px 5px 8px rgba(7, 201, 255, 0.855));
+  box-shadow: 9px -4px 10px rgba(217, 0, 255, 0.47);
+  filter: drop-shadow(2px 5px 15px rgba(255, 44, 7, 0.509));
+  margin: 3rem 0;
+  opacity: calc(85%);
+  transition: 0.8s;
   /* border: rgb(250, 130, 31) solid 5px; */
+}
+
+.hero img:hover {
+  box-shadow: -2px 2px 10px rgba(8, 0, 255, 0.854);
+  filter: drop-shadow(2px 5px 15px rgba(25, 79, 255, 0.659));
+  opacity: calc(95%);
+  transition: 0.4s;
+  border: none;
 }
 
 /* 2 cards - Hero card styles */
@@ -219,6 +240,7 @@ ul {
   font-weight: 500;
   margin: 2rem 0;
   /* border: rgb(137, 12, 246) solid 5px; */
+  color: aliceblue;
 }
 
 /* Call-to-action button styles */
