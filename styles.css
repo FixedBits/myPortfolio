@@ -29,7 +29,7 @@ html {
 /* Body styles including background image */
 body {
   /* Background image and other properties */
-  background-image: url(./images/bg-img.jpg);
+  background-image: url(./images/3396417.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -172,7 +172,7 @@ ul {
 
 /* Main container styles */
 .main-container {
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(25px);
   overflow: hidden;
   /* border: red solid 5px; */
 }
