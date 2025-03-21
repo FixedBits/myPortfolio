@@ -3,13 +3,13 @@
 
 /* Root variables for colors */
 :root {
-  --background-color: rgba(111, 0, 255, 0.364);
+  --background-color: rgba(6, 38, 195, 0.054);
   --box-shadow-color: rgba(68, 36, 250, 0.571);
   --text-shadow-color: #024cac;
-  --link-text-color: #00ffea;
+  --link-text-color: #ff0066;
   --hover-background-color: rgba(204, 235, 241, 0.205);
   --hover-box-shadow-color: rgba(20, 0, 195, 0.835);
-  --menu-icon-color: #00ffcc;
+  --menu-icon-color: #ff0066;
   --hover-menu-background-color: hsla(224, 96%, 62%, 0.748);
   --hover-menu-border-color: hsla(220, 74%, 56%, 0.584);
 }
@@ -29,13 +29,15 @@ html {
 /* Body styles including background image */
 body {
   /* Background image and other properties */
-  background-image: url(./images/bgfr.jpg);
+  background-image: url(./images/bg-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   min-height: 100vh;
   overflow-x: hidden; /* Prevent horizontal scrolling */
+  /* There are some conflicts with other blurred elements when in use here */
+  /* backdrop-filter: blur(13px); */
 }
 
 /* Sidebar styles */
@@ -84,6 +86,7 @@ body {
   transition: 0.3s;
   padding: 6px;
   font-weight: 600;
+  font-size: 1.1em;
 }
 
 /* Nav link hover styles */
@@ -108,7 +111,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(13px);
+  background-color: var(--background-color);
+  box-shadow: 3px 1px 35px var(--box-shadow-color);
+  backdrop-filter: blur(30px);
   font-family: "Poppins", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -167,12 +172,15 @@ ul {
 
 /* Main container styles */
 .main-container {
+  backdrop-filter: blur(10px);
+
   overflow: hidden;
   /* border: red solid 5px; */
 }
 
 /* Hero section styles */
 .hero {
+  /* backdrop-filter: blur(13px); */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -240,7 +248,7 @@ ul {
   font-weight: 500;
   margin: 2rem 0;
   /* border: rgb(137, 12, 246) solid 5px; */
-  color: aliceblue;
+  color: antiquewhite;
 }
 
 /* Call-to-action button styles */
@@ -252,27 +260,32 @@ ul {
 }
 
 .cta-btn a {
+  border: solid #ff006672 2px;
   border-radius: 10px;
   padding: 1rem 1rem;
-  background-color: rgba(35, 96, 252, 0.186);
-  box-shadow: -2px 3px 10px rgba(4, 46, 197, 0.693);
+  background-color: rgba(66, 60, 243, 0.26);
+  box-shadow: 7px -4px 10px rgba(217, 0, 255, 0.324);
+  filter: drop-shadow(2px 5px 15px rgba(255, 44, 7, 0.509));
   text-shadow: 2px 2px 4px rgba(57, 88, 116, 0.877);
   white-space: nowrap;
   font-size: 20px;
   font-weight: 500;
   text-align: center;
-  transition: 0.1s;
+  transition: 0.7s;
 }
 
 .cta-btn a:hover {
   border-radius: 10px;
-  background-color: rgba(35, 96, 252, 0.426);
-  box-shadow: -2px 3px 10px rgba(5, 29, 116, 0.507);
+  box-shadow: -2px 2px 8px rgba(8, 0, 255, 0.854);
+  filter: drop-shadow(2px 1px 11px rgba(25, 79, 255, 0.659));
   white-space: nowrap;
+  transition: 0.3s;
+  color: antiquewhite;
 }
 
 /* Banner styles */
 .banner {
+  backdrop-filter: blur(13px);
   border-radius: 5px;
   border: rgb(84, 161, 255) solid 2px;
   height: 150px;
@@ -291,7 +304,7 @@ ul {
 
 /* Cards styles */
 .cards {
-  border: solid 7px var(--background-color);
+  border: solid 7px rgba(255, 0, 115, 0.269);
   border-radius: 20px;
   background-color: rgba(232, 232, 233, 0.082);
   box-shadow: 1px 2px 30px rgba(68, 36, 250, 0.262);
