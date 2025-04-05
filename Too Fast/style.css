@@ -8,11 +8,13 @@
 }
 
 body {
-  background-color: rgb(20, 20, 20);
-  background-image: url(./images/blurry-gradient-haikei.png);
+  background-color: #000000;
+  /* A metalic background + blur will be suitable for this project */
   background-size: cover;
+  background-image: url(./images/solid-navy-blue-concrete-textured-wall.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .nav-list {
@@ -22,21 +24,54 @@ body {
   justify-content: center;
   gap: 3rem;
   font-weight: 500;
-  border: solid red 2px;
   overflow: hidden;
+  background-color: rgba(250, 235, 215, 0.092);
+  backdrop-filter: blur(5px);
+
+  /* border: solid red 2px; */
 }
 
 li {
   list-style-type: none;
 }
 
-li a{
-     white-space: nowrap;
-     font-size: 1.2em;
-
+li a {
+  white-space: nowrap;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: antiquewhite;
 }
 
-.hero-container{
-    display: flex;
-    align-items: center;
+.login-btn {
+  border: white solid 2px;
+  border-radius: 20%;
+  padding: 10px;
+  background-color: rgb(89, 0, 255);
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: antiquewhite;
+  padding: 2rem;
+  /* border: yellow solid 2px; */
+}
+
+.hero-container p {
+  margin: 2rem;
+  font-weight: 500;
+}
+
+.hero-container img {
+  width: 850px;
+  height: auto;
+  border-radius: 20px;
+  background: linear-gradient(225deg, #3c00ff, #292929);
+  box-shadow: 5px 5px 3px #040f34, 5px -1px 3px #3e3e3e;
+}
+
+h1,
+h3 {
+  margin: 2rem;
 }
