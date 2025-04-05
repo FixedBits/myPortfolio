@@ -2,12 +2,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   /* Consistent font family across the website */
 }
 
 body {
-  background-color: #f9f9f9;
+  background-color: antiquewhite;
   /* Light background color for readability */
   min-height: 100vh;
   /* Ensure the body covers the entire viewport height */
@@ -20,22 +21,40 @@ body {
   transition: 1s;
 }
 
-button.toggle-btn {
-  font-size: 1rem;
-  /* Adjust font size */
-  padding: 0.6rem;
-  /* Padding for better clickability */
-  background: none;
-  /* Transparent background */
-  border: none;
-  /* Remove default border */
-  color: rgb(197, 0, 0);
-  /* Dark gray text color */
+/* Toggle button for Dark/Light mode */
+.toggle-btn {
   cursor: pointer;
-  /* Pointer cursor on hover */
-  border: solid black 0.05rem;
-  /* Subtle black border */
-  border-radius: 5px;
+  border-radius: 50%;
+  border: rgb(120, 120, 120) 1.5px solid;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  position: fixed; /* Positioning relative to the page */
+  top: 35px; /* Distance from the top of the page */
+  right: 25px; /* Distance from the right of the page */
+}
+
+.toggle-btn svg {
+  fill: rgb(120, 120, 120);
+}
+
+.toggle-btn svg:first-child {
+  display: block; /* Show by default */
+}
+
+.toggle-btn svg:last-child {
+  display: none; /* Hide by default */
+}
+
+.dark-mode .toggle-btn svg:first-child {
+  display: none; /* Hide the first child in dark mode */
+}
+
+.dark-mode .toggle-btn svg:last-child {
+  display: block; /* Show the last child in dark mode */
 }
 
 .video-container {
@@ -46,14 +65,13 @@ button.toggle-btn {
   /* Center-align items */
   justify-content: center;
   /* Center-align items */
-  border: #f9f9f9 solid 0.01rem;
   /* Subtle border */
   color: rgb(161, 161, 161);
   /* Light gray text color */
   margin: 1rem;
   /* Margin around the product card */
   padding: 2rem;
-  box-shadow: 0 0 11px 2px rgba(137, 137, 137, 0.377);
+  box-shadow: 0 0 8px 2px rgba(196, 196, 196, 0.377);
 
   /* Inner shadow for card */
   transition: 0.5s;
@@ -84,7 +102,6 @@ button.toggle-btn {
 
 .video-caption {
   padding: 1rem;
-  /* Padding inside the caption */
   max-width: 61%;
   /* Set width of the caption */
 }
@@ -104,6 +121,8 @@ nav {
   /* Prevent text wrapping */
   overflow-x: hidden;
   /* Prevent horizontal scrolling */
+  align-items: center;
+  overflow: hidden;
 }
 
 .nav-links {
@@ -119,7 +138,7 @@ li {
 a {
   text-decoration: none;
   /* Remove underline from links */
-  color: rgb(58, 58, 58);
+  color: rgb(120, 120, 120);
   /* Dark gray text color */
   font-size: 0.9em;
   /* Slightly smaller font size */
@@ -182,7 +201,7 @@ a:visited {
 
 .product-grid {
   border: #f9f9f9 solid 0.01rem;
-  box-shadow: 0 0 11px 2px rgba(137, 137, 137, 0.377);
+  box-shadow: 0 0 8px 2px rgba(196, 196, 196, 0.377);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* Create two equal columns */
