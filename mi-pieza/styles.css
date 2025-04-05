@@ -2,11 +2,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   /* Consistent font family across the website */
 }
-
+html {
+  scrollbar-width: thin;
+}
 body {
   background-color: antiquewhite;
   /* Light background color for readability */
@@ -22,6 +23,7 @@ body {
 }
 
 /* Toggle button for Dark/Light mode */
+
 .toggle-btn {
   cursor: pointer;
   border-radius: 50%;
@@ -31,12 +33,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
   background: transparent;
   position: fixed; /* Positioning relative to the page */
   top: 35px; /* Distance from the top of the page */
   right: 25px; /* Distance from the right of the page */
 }
 
+.toggle-btn:hover {
+  background-color: rgb(0, 0, 0);
+}
 .toggle-btn svg {
   fill: rgb(120, 120, 120);
 }
@@ -57,6 +63,8 @@ body {
   display: block; /* Show the last child in dark mode */
 }
 
+/* End of Dark Mode */
+
 .video-container {
   display: flex;
   flex-direction: column;
@@ -71,17 +79,29 @@ body {
   margin: 1rem;
   /* Margin around the product card */
   padding: 2rem;
-  box-shadow: 0 0 8px 2px rgba(196, 196, 196, 0.377);
+  box-shadow: 0 0 8px 2px rgba(196, 196, 196, 0.276);
 
   /* Inner shadow for card */
   transition: 0.5s;
   border-radius: 5px;
 }
 
-#card-video,
+#card-video {
+  width: 60vw;
+  height: auto;
+  /* Maintain aspect ratio */
+  max-width: 100%;
+  /* Prevent overflow */
+  max-height: 70vh;
+  /* Limit the maximum height */
+  opacity: 0.8;
+  /* Initial opacity for a semi-transparent effect */
+  transition: opacity 0.5s;
+  /* Smooth opacity transition */
+}
+
 .product-card img {
   width: 72vw;
-  /* Set responsive width for the video and images */
   height: auto;
   /* Maintain aspect ratio */
   max-width: 100%;
@@ -102,20 +122,19 @@ body {
 
 .video-caption {
   padding: 1rem;
-  max-width: 61%;
+  max-width: 65%;
   /* Set width of the caption */
 }
 
 nav {
   padding: 3rem;
-  /* Ample padding for navigation */
+  /* Padding for navigation */
   display: flex;
   /* Flexbox layout for navigation items */
-  gap: 4rem;
   /* Space between navigation items */
   justify-content: center;
   /* Center-align navigation items */
-  border-bottom: solid 0.01rem rgb(179, 179, 179);
+  border-bottom: solid 0.01rem rgb(120, 120, 120);
   /* Subtle bottom border */
   text-wrap: nowrap;
   /* Prevent text wrapping */
@@ -126,6 +145,8 @@ nav {
 }
 
 .nav-links {
+  display: flex;
+  gap: 4rem;
   white-space: nowrap;
   /* Prevent text wrapping */
 }
@@ -151,11 +172,6 @@ a:hover {
   /* Add bottom border on hover */
   transition: border-bottom 0.2s;
   /* Faster transition on hover */
-}
-
-a:visited {
-  color: rgb(68, 68, 68);
-  /* Darker gray for visited links */
 }
 
 .main {
@@ -200,7 +216,6 @@ a:visited {
 }
 
 .product-grid {
-  border: #f9f9f9 solid 0.01rem;
   box-shadow: 0 0 8px 2px rgba(196, 196, 196, 0.377);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -214,7 +229,7 @@ a:visited {
 }
 
 .product-grid .product-card {
-  border: 0.1rem solid rgba(205, 205, 205, 0.541);
+  border: 0.1rem solid rgba(120, 120, 120, 0.541);
 }
 
 .product-grid:hover .product-card:hover {
@@ -230,7 +245,7 @@ h1 {
   /* Spacing between letters */
   font-weight: 300;
   /* Light font weight */
-  border-bottom: solid 0.01rem rgb(179, 179, 179);
+  border-bottom: solid 0.01rem rgb(120, 120, 120);
   /* Subtle bottom border */
   font-size: 1.5em;
   /* Adjusted font size */
@@ -258,13 +273,21 @@ p {
 
 .listing-btn {
   border: 0.1rem solid rgb(120, 120, 120);
+  border-radius: 5px;
   padding: 0.5rem 1rem;
   margin-top: 1.5rem;
+  transition: 0.6s;
 }
 
-/* p #price-txt {
-  font-size: 8px;
-} */
+.listing-btn:hover {
+  background-color: rgba(86, 129, 255, 0.478);
+  transition: 0.7s;
+}
+
+#price-txt {
+  font-size: 17px;
+  padding-top: 2rem;
+}
 
 footer p {
   margin: 0.5rem;
@@ -272,9 +295,9 @@ footer p {
 
 footer {
   text-align: center;
-  border-top: 0.1rem solid #f9f9f9;
+  border-top: 0.1rem solid rgb(120, 120, 120);
   /*  black border */
   width: 100%;
   /* Full width */
-  margin-top: 3rem;
+  margin: 5rem 0 1rem 0;
 }
